@@ -6,8 +6,4 @@ def say_hello():
 
 
 def apply_fizz_to(a_number):
-    result = a_number % 3
-    if result == 0:
-        return 'Fizz'
-    else:
-        return a_number
+    return 'Fizz' if (a_number % 3) == 0 else a_number
