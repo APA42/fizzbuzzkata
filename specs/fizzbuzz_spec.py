@@ -19,3 +19,11 @@ with describe('FizzBuzz Kata'):
                 result = fizzbuzzkata.apply_fizz_to(a_number)
 
                 expect(result).to(equal(1))
+
+    with context('when given number is 2'):
+        with it('returns the given number 2'):
+            a_number = 2
+
+            result = fizzbuzzkata.apply_fizz_to(a_number)
+
+            expect(result).to(equal(2))
