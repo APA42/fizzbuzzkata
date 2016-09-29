@@ -10,3 +10,12 @@ with describe('FizzBuzz Kata'):
             result = fizzbuzzkata.say_hello()
 
             expect(result).to(equal('Hello'))
+
+    with context('Fizz case -> when a number is divisible by 3'):
+        with context('when given number is 1'):
+            with it('returns the given number 1'):
+                a_number = 1
+
+                result = fizzbuzzkata.apply_fizz_to(a_number)
+
+                expect(result).to(1)
