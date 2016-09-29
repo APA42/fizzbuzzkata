@@ -6,4 +6,4 @@ def say_hello():
 
 
 def apply_fizz_to(a_number):
-    return 1
+    return a_number
