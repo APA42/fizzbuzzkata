@@ -3,3 +3,7 @@
 
 def say_hello():
     return 'Hello'
+
+
+def apply_fizz_to():
+    pass
