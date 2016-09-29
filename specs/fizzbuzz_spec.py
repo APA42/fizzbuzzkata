@@ -35,3 +35,11 @@ with describe('FizzBuzz Kata'):
                 result = fizzbuzzkata.apply_fizz_to(a_number)
 
                 expect(result).to(equal('Fizz'))
+
+        with context('when a number is not divisible by 3'):
+            with it('returns the same number'):
+                a_number = 7
+
+                result = fizzbuzzkata.apply_fizz_to(a_number)
+
+                expect(result).to(equal(a_number))
