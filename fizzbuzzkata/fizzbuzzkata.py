@@ -5,5 +5,5 @@ def say_hello():
     return 'Hello'
 
 
-def apply_fizz_to():
+def apply_fizz_to(a_number):
     pass
