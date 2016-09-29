@@ -18,4 +18,4 @@ with describe('FizzBuzz Kata'):
 
                 result = fizzbuzzkata.apply_fizz_to(a_number)
 
-                expect(result).to(1)
+                expect(result).to(equal(1))
