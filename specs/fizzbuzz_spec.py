@@ -8,6 +8,7 @@ LIST_NUMBERS_NOT_DIVISIBLE_BY_3 = [1, 2, 4, 7, 8]
 LIST_NUMBERS_DIVISIBLE_BY_3 = [3, 6, 9]
 LIST_NUMBERS_NOT_DIVISIBLE_BY_5 = [1, 2, 4, 7, 8]
 LIST_NUMBERS_DIVISIBLE_BY_5 = [5, 20]
+LIST_NUMBERS_DIVISIBLE_BY_5_AND_BY_3 = [15, 30]
 
 
 with describe('FizzBuzz Kata'):
@@ -46,3 +47,11 @@ with describe('FizzBuzz Kata'):
                     result = fizzbuzzkata.apply_fizzbuzz_to(a_number)
 
                     expect(result).to(equal('Buzz'))
+
+    with context('FizzBuzz case'):
+        with context('when a number is divisible by 5 and by 3'):
+            with it('returns FizzBuzz'):
+                for a_number in LIST_NUMBERS_DIVISIBLE_BY_5_AND_BY_3:
+                    result = fizzbuzzkata.apply_fizzbuzz_to(a_number)
+
+                    expect(result).to(equal('FizzBuzz'))
