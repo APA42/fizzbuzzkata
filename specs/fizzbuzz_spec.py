@@ -19,13 +19,13 @@ with describe('FizzBuzz Kata'):
         with context('when a number is not divisible by 3'):
             with it('returns the same number'):
                 for a_number in LIST_NUMBERS_NOT_DIVISIBLE_BY_3:
-                    result = fizzbuzzkata.apply_fizz_to(a_number)
+                    result = fizzbuzzkata.apply_fizzbuzz_to(a_number)
 
                     expect(result).to(equal(a_number))
 
         with context('when a number is divisible by 3'):
             with it('returns Fizz'):
                 for a_number in LIST_NUMBERS_DIVISIBLE_BY_3:
-                    result = fizzbuzzkata.apply_fizz_to(a_number)
+                    result = fizzbuzzkata.apply_fizzbuzz_to(a_number)
 
                     expect(result).to(equal('Fizz'))
