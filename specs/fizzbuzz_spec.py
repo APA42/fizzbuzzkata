@@ -55,3 +55,10 @@ with describe('FizzBuzz Kata'):
                     result = fizzbuzzkata.apply_fizzbuzz_to(a_number)
 
                     expect(result).to(equal('FizzBuzz'))
+
+        with context('when a number is not divisible by 5 and by 3'):
+            with it('returns the same number'):
+                for a_number in LIST_NUMBERS_DIVISIBLE_BY_5 + LIST_NUMBERS_NOT_DIVISIBLE_BY_3:
+                    result = fizzbuzzkata.apply_fizzbuzz_to(a_number)
+
+                    expect(result).not_to(equal('FizzBuzz'))
