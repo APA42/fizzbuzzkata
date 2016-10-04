@@ -4,10 +4,10 @@ from expects import *
 from fizzbuzzkata import fizzbuzzkata
 
 
-LIST_NUMBERS_NOT_DIVISIBLE_BY_3 = [1, 2, 4, 5, 7, 8]
+LIST_NUMBERS_NOT_DIVISIBLE_BY_3 = [1, 2, 4, 7, 8]
 LIST_NUMBERS_DIVISIBLE_BY_3 = [3, 6, 9]
 LIST_NUMBERS_NOT_DIVISIBLE_BY_5 = [1, 2, 4, 7, 8]
-LIST_NUMBERS_DIVISIBLE_BY_5 = [5, 15, 20]
+LIST_NUMBERS_DIVISIBLE_BY_5 = [5, 20]
 
 
 with describe('FizzBuzz Kata'):
