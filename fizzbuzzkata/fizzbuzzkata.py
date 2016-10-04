@@ -12,5 +12,4 @@ def apply_fizzbuzz_to(a_number):
         return 'Fizz'
     elif (a_number % 5) == 0:
         return 'Buzz'
-    else:
-        return a_number
+    return a_number
